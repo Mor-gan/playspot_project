@@ -1,0 +1,19 @@
+input{
+    border: none !important;
+   height: 35px;
+   background-color: whitesmoke;
+   width: 100vw;
+   outline: 0;
+   size: 22px;
+   padding: 5px;
+}
+.search_button{
+    background-color: red;
+    width: 10vw;
+    color: white;
+    border: none;
+}
+#search{
+display: flex;
+flex-direction: row;
+}
