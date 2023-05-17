@@ -9,9 +9,27 @@ const Navbar = () => {
   return (
     <nav className="nav-bar">
       <div className="menu-icon" >
-        <div onClick={handleShowNavbar}>
+        <div className="hideShow" onClick={handleShowNavbar}>
           <Hamburger />
         </div>
+        <div className="redNav"> 
+        <div className="showLink"><ul>
+            <li>
+              <a href="/">Home</a>
+            </li>
+            <li>
+              <a href="/Dirt Shed Show">Dirt Shed Show</a>
+            </li>
+            <li>
+              <a href="/MTB Maintenance">MTB Maintenance</a>
+            </li>
+            <li>
+              <a href="/Ask GMBN">Ask GMBN</a>
+            </li>
+            <li>
+              <a href="/Features">Features</a>
+            </li>
+          </ul> </div>
         <div className="social_icon">
           <a href="#" className="fa fa-facebook" id="icon"></a>
           <a href="#" className="fa fa-twitter" id="icon"></a>
@@ -19,8 +37,10 @@ const Navbar = () => {
           <a href="#" className="fa fa-google" id="icon"></a>
           <a href="#" className="fa fa-snapchat" id="icon"></a>
         </div>
+        </div>
+        
       </div>
-      <div id="nav-element" >
+      <div id="t"  >
         {
           showNavbar ? <ul>
             <li>
@@ -38,7 +58,8 @@ const Navbar = () => {
             <li>
               <a href="/Features">Features</a>
             </li>
-          </ul> : null
+          </ul> 
+          : null
         }
       </div>
     </nav>

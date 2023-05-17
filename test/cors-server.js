@@ -13,7 +13,6 @@ app.use(function(req, res, next) {
 
 app.listen(8100, '0.0.0.0');
 console.log("Listening on 0.0.0.0: 8100");
-
 app.get('/api', function(req, res) {
     var config = {
         url: 'https://www.globalcyclingnetwork.com/api/videos',

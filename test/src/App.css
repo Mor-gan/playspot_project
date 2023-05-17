@@ -4,6 +4,10 @@ margin: 0;
 padding: 0;
 }
 /* ------------------upper nav styling---------------- */
+#MainNav{
+  display: flex;
+  flex-direction: row;
+}
 #upper_nav{
   display: flex ;
   flex-direction: row;
@@ -14,47 +18,46 @@ padding: 0;
 #side_uppernav{
   display: flex ;
   flex-direction: row;
-  margin-left: 25%;
 }
 #side_uppernav img{
   display: flex ;
   flex-direction: row;
-  margin-left: 2%;
+  float: right !important;
+}
+.showLink ul a{
+  text-decoration: none;
+  color: white;
+  margin-right: 110px;
+  align-content: stretch;
+  font-size: 18px;
+  font-weight: 70%;
 }
 /* ----------------------navbar dropdown styling---------------- */
-#nav-element ul a{
+/* #nav-element ul a{
 text-decoration: none !important;
 color: white;
 font-size: 22px;
 margin: 0 0 5px 0;
-}
-#nav-element ul{
-  background-color: black;  
-}
-#nav-element ul li{
- border-bottom: 1px solid white; 
- padding: 0.5rem 0 0.5rem 0;
- width: 100vw;
- margin-left: 0;
-}
+background-color: green;
+} */
+
 .nav-bar{
   background-color: red;
- 
+  padding: 5px;
 }
 .menu-icon{
   color: white !important;
-  display: flex;
   flex-direction: row;
 }
-.social_icon{
-  margin-top: 1rem;
-  margin-left: 60%;
-  width: 40vw;
-}
+
 .social_icon a{
   color: white !important;
-  padding: 0 0 0 10px;
+  padding: 0 0 0 20px;
   text-decoration: none;
+}
+.redNav{
+  display: flex;
+  flex-direction: row;
 }
 /* ---------------video styling-------------------- */
 .image_box img{
@@ -75,10 +78,24 @@ margin: 0 0 5px 0;
   list-style: none !important;
 }
 
-
-@media screen and (min-width:1230px ){
+.nav-bar .menu-icon .showLink ul{
+  text-decoration: none;
+  float: left;
+}
+@media (min-width: 768px) {
+  .hideShow {
+    display: none;
+  }
+  .nav-bar ul {
+    display: flex;
+    justify-content: flex-end;
+    
+  }
+  #nav-elemen{
+    display: block !important;
+  }
   #side_uppernav{
-    margin-left: 78%;
+    margin-left: 70%;
   }
   #side_uppernav img{
    padding-left: 10%;
@@ -90,4 +107,38 @@ margin: 0 0 5px 0;
   .youtube{
 width:100%!important;
   }
+}
+@media (max-width: 767px) {
+  .showLink {
+    display: none;
+  }
+  #nav-element ul{
+    background-color: black;  
+  }
+  #nav-element ul li{
+   border-bottom: 1px solid white; 
+   padding: 0.5rem 0 0.5rem 0;
+   width: 100vw;
+   margin-left: 0;
+  }
+  #side_uppernav img{
+  display: flex ;
+  flex-direction: row;
+ margin-left: 15%;
+}
+#side_uppernav{
+  margin-left: 20%;
+}
+.redNav{
+  display: flex;
+  flex-direction: row;
+}
+#t {
+  text-decoration: none;
+  color: white;
+  background-color: black;
+}
+#t{
+  
+}
 }
